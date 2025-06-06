@@ -1,0 +1,6 @@
+@WebScheduler_HostAddress = http://localhost:5075
+
+GET {{WebScheduler_HostAddress}}/JobsView/
+Accept: application/json
+
+###
