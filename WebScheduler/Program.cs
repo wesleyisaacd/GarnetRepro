@@ -37,23 +37,23 @@ app.UseHangfireDashboard("/jobsview", new DashboardOptions()
 {
     StatsPollingInterval = (60000), //60000=1 minute
 });
-RecurringJob.AddOrUpdate("SendSMS", ()=> Console.Write("SendSMS"), "*/20 * * * * *");
-RecurringJob.AddOrUpdate("JobTrackingSMS", () => Console.Write("JobTrackingSMS"), "*/20 * * * * *");
-RecurringJob.AddOrUpdate("SendEmail", () => Console.Write("SendEmail"), "*/20 * * * * *");
+RecurringJob.AddOrUpdate("SendSMS", ()=> Console.Write("SendSMS"), "*/30 * * * * *");
+RecurringJob.AddOrUpdate("JobTrackingSMS", () => Console.Write("JobTrackingSMS"), "*/30 * * * * *");
+RecurringJob.AddOrUpdate("SendEmail", () => Console.Write("SendEmail"), "*/30 * * * * *");
 RecurringJob.AddOrUpdate("PushNotification", () => Console.Write("PushNotification"), "*/10 * * * * *");
-RecurringJob.AddOrUpdate("PushCustomersToOtherSystem", () => Console.Write("PushCustomersToOtherSystem"), "*/20 * * * * *");
-RecurringJob.AddOrUpdate("ClientPortalAutoSchedule", () => Console.Write("ClientPortalAutoSchedule"), "*/20 * * * * *");
-RecurringJob.AddOrUpdate("PunchWoCreate", () => Console.Write("PunchWoCreate"), "*/10 * * * * *");
-RecurringJob.AddOrUpdate("WorkFlowProcessAction", () => Console.Write("WorkFlowProcessAction"), "*/20 * * * * *");
-RecurringJob.AddOrUpdate("AttachmentImport", () => Console.Write("AttachmentImport"), "*/20 * * * * *");
-RecurringJob.AddOrUpdate("FormTrackingEmail", () => Console.Write("FormTrackingEmail"), "*/20 * * * * *");
+RecurringJob.AddOrUpdate("PushCustomersToOtherSystem", () => Console.Write("PushCustomersToOtherSystem"), "*/30 * * * * *");
+RecurringJob.AddOrUpdate("ClientPortalAutoSchedule", () => Console.Write("ClientPortalAutoSchedule"), "*/30 * * * * *");
+RecurringJob.AddOrUpdate("PunchWoCreate", () => Console.Write("PunchWoCreate"), "*/30 * * * * *");
+RecurringJob.AddOrUpdate("WorkFlowProcessAction", () => Console.Write("WorkFlowProcessAction"), "*/30 * * * * *");
+RecurringJob.AddOrUpdate("AttachmentImport", () => Console.Write("AttachmentImport"), "*/30 * * * * *");
+RecurringJob.AddOrUpdate("FormTrackingEmail", () => Console.Write("FormTrackingEmail"), "*/30 * * * * *");
 RecurringJob.AddOrUpdate("JobTrackingEmail", () => Console.Write("JobTrackingEmail"), "*/20 * * * * *");
-RecurringJob.AddOrUpdate("BulkUpdateAttachment", () => Console.Write("BulkUpdateAttachment"), "*/20 * * * * *");
-RecurringJob.AddOrUpdate("ProjectJobCreation", () => Console.Write("ProjectJobCreation"), "*/20 * * * * *");
+RecurringJob.AddOrUpdate("BulkUpdateAttachment", () => Console.Write("BulkUpdateAttachment"), "*/30 * * * * *");
+RecurringJob.AddOrUpdate("ProjectJobCreation", () => Console.Write("ProjectJobCreation"), "*/30 * * * * *");
 RecurringJob.AddOrUpdate("ProjectJobDelete", () => Console.Write("ProjectJobDelete"), "*/20 * * * * *");
 RecurringJob.AddOrUpdate("GeoTabIntegration", () => Console.Write("GeoTabIntegration"), "*/20 * * * * *");
-RecurringJob.AddOrUpdate("GeoTabIntegration", () => Console.Write("GeoTabIntegration"), "*/10 * * * * *");
-RecurringJob.AddOrUpdate("UpdateVrRequest", () => Console.Write("UpdateVrRequest"), "*/10 * * * * *");
+RecurringJob.AddOrUpdate("GeoTabIntegration", () => Console.Write("GeoTabIntegration"), "*/30 * * * * *");
+RecurringJob.AddOrUpdate("UpdateVrRequest", () => Console.Write("UpdateVrRequest"), "*/20 * * * * *");
 RecurringJob.AddOrUpdate("IsEnablePasswordExpiryEmail", () => Console.Write("IsEnablePasswordExpiryEmail"), "*/20 * * * * *");
 RecurringJob.AddOrUpdate("IsEnableUserInactiveEmail", () => Console.Write("IsEnableUserInactiveEmail"), "*/20 * * * * *");
 RecurringJob.AddOrUpdate("AssetIntegration", () => Console.Write("AssetIntegration"), "*/20 * * * * *");
